@@ -1784,6 +1784,7 @@ input[type="radio"] {
     text-align: center;
     background-color: var(--color-info);
     overflow: hidden;
+    padding: 1em 0; /* Agrega un espacio respirable arriba y abajo */
 }
 
 .info__text {
@@ -1791,22 +1792,41 @@ input[type="radio"] {
     color: #fff;
     font-size: .8rem;
     padding: 0 1em;
-    line-height: 1.5;
-    margin: .7em;
-    font-weight: 500;
+    line-height: 1.6;
+    margin: .5em 0;
+    font-weight: 400; /* Un peso normal para la lectura */
 }
 
-.info_icon {
+.info__heart {
+    color: #e25555; /* Color rojo para el corazón */
+    display: inline-block;
+    margin: 0 .1em;
+}
+
+.info__callout {
+    font-weight: 600;
+    opacity: 0.95;
+    display: inline-block;
+    margin-top: .4em;
+}
+
+.info__icon {
     width: 20px;
 }
 
 .info__link {
+    display: inline-block;
     padding: .5em;
     color: var(--color-letra-web);
-    font-size: 1rem;
+    font-size: .95rem; /* Ajustado ligeramente para no desproporcionar el texto del pie */
+    font-weight: 600;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
 }
 
-
+.info__link:hover {
+    opacity: 0.8; /* Efecto sutil al pasar el cursor o tocar en móvil */
+}
 
 
 
