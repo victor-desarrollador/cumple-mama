@@ -1784,21 +1784,21 @@ input[type="radio"] {
     text-align: center;
     background-color: var(--color-info);
     overflow: hidden;
-    padding: 1em 0; /* Agrega un espacio respirable arriba y abajo */
+    padding: 1.2em 0; /* Opcional: agrega margen interno arriba y abajo */
 }
 
 .info__text {
     font-family: var(--font-montserrat);
     color: #fff;
-    font-size: .8rem;
+    font-size: .85rem;
     padding: 0 1em;
     line-height: 1.6;
     margin: .5em 0;
-    font-weight: 400; /* Un peso normal para la lectura */
+    font-weight: 400;
 }
 
 .info__heart {
-    color: #e25555; /* Color rojo para el corazón */
+    color: #e25555;
     display: inline-block;
     margin: 0 .1em;
 }
@@ -1810,25 +1810,26 @@ input[type="radio"] {
     margin-top: .4em;
 }
 
-.info__icon {
+.info_icon {
     width: 20px;
 }
 
 .info__link {
     display: inline-block;
-    padding: .5em;
+    padding: .4em .6em;
     color: var(--color-letra-web);
-    font-size: .95rem; /* Ajustado ligeramente para no desproporcionar el texto del pie */
-    font-weight: 600;
-    text-decoration: none;
-    transition: opacity 0.2s ease;
+    font-size: .95rem;
+    font-weight: 700; /* Texto en negrita para destacar */
+    text-decoration: underline; /* Mantiene el subrayado siempre visible */
+    text-underline-offset: 3px; /* Separa ligeramente la línea del texto para mejor lectura */
+    transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
-.info__link:hover {
-    opacity: 0.8; /* Efecto sutil al pasar el cursor o tocar en móvil */
+.info__link:hover,
+.info__link:active {
+    opacity: 0.8; /* Efecto visual al pasar el mouse o al tocar en celulares */
+    transform: translateY(-1px);
 }
-
-
 
 
 .boton-descarga {
